@@ -39,14 +39,20 @@ body{
     font-weight: bolder;
     text-align: center;
 }
+/* .container{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start; 
+     flex-wrap: wrap;
+    /text-wrap: row;
+} */
 .container{
     height: 50vh;
-    display: flex;
-    justify-content: flex-start;
-    /* flex-wrap: wrap;
-    text-wrap: row; */
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+    
 #stationary{
     background-color: #a8a8b0;
     height: 40vh;
@@ -75,6 +81,7 @@ body{
 
 }
 button{
+    
     position: relative;
     /* color: #00120b; */
     color: #f6efee;
@@ -86,5 +93,26 @@ button{
     font-size: 20px;
     opacity: 0.75;
     cursor: pointer;
-
+}
+@media  screen and (max-width:900px) {
+    .container{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 300px;
+        justify-items: center;
+        gap: 34px;
+    }
+}
+@media  screen and (max-width:500px) {
+    .container{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-bottom: 970px;
+        justify-items: center;
+        gap: 34px;
+    }
 }
