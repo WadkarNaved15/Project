@@ -1,0 +1,7 @@
+Approved_id,stock_ref_id,ds_item_id,department_name,Product_name,product_type,name,Product_description,quantity,amount,bill_no,Inward_no,deadstock_no,recieved_at,name_of_supplier
+1,1001,2001,Department A,Product A,consumable,Supplier 1,Description for Product A,100,500.00,BILL001,INW001,DSN001,2022-01-01 10:00:00,Supplier Company A
+2,1002,2002,Department B,Product B,non-consumable,Supplier 2,Description for Product B,50,750.00,BILL002,INW002,DSN002,2023-05-15 12:30:00,Supplier Company B
+3,1003,2003,Department C,Product C,consumable,Supplier 3,Description for Product C,200,1200.00,BILL003,INW003,DSN003,2024-09-20 08:45:00,Supplier Company C
+4,1004,2004,Department A,Product D,non-consumable,Supplier 1,Description for Product D,75,1500.00,BILL004,INW004,DSN004,2022-11-30 14:20:00,Supplier Company A
+5,1005,2005,Department B,Product E,consumable,Supplier 2,Description for Product E,150,800.00,BILL005,INW005,DSN005,2023-07-10 09:00:00,Supplier Company B
+6,1006,2006,Department C,Product F,non-consumable,Supplier 3,Description for Product F,100,2000.00,BILL006,INW006,DSN006,2024-02-18 16:00:00,Supplier Company C
