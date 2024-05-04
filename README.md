@@ -38,4 +38,4 @@ To run the server:
 
 ## Product Page
 
-For the Product page, React is used, which is converted into a JavaScript file using Babel. After making changes in the React part of the page, run the command `npm run build`. This will create `bundle.js` in the `dist` folder. Then, move that `bundle.js` into the `javascript` folder inside the `public` folder. The changes made will be visible after this process.
+For the Product page, React is used, which is converted into a JavaScript file using Babel. After making changes in the React part of the page, run the command `npm run build`. This will create `bundle.js` in the `dist` folder which is to be created by you before running the command. Then, move that `bundle.js` into the `javascript` folder inside the `public` folder. The changes made will be visible after this process.
