@@ -308,6 +308,17 @@ export async function getDSRequests(name){
     return [columnNames,result]
     }
 }
+export async function getDSRequestsHOD(name){
+    const [result] = await pool.query(`SELECT * 
+    FROM ds_req_main
+    WHERE department_name = ? AND status = "pending"
+    ORDER BY requested_at DESC `,[name])
+    if(result.length === 0) {return "No result in database.";}
+    else{
+    const columnNames = Object.keys(result[0]);
+    return [columnNames,result]
+    }
+}
 export async function getDSRequestsR(name){
     const [result] = await pool.query(`SELECT * 
     FROM ds_req_main

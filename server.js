@@ -620,7 +620,7 @@ app.post("/addLab",authorize(["Admin"]),async(req,res)=> {
           const [columns,Request]  =  await backenFunctions.getDSRequestsMainPrincipal();
           res.render('DS',{data:Request,columns:columns})
         }else if( userRole=="HOD"){
-          const [columns,Request]  =  await backenFunctions.getDSRequests(name);
+          const [columns,Request]  =  await backenFunctions.getDSRequestsHOD(name);
           res.render('DS',{data:Request,columns:columns})
         }else{
           const [columns,Request]  =  await backenFunctions.getSLRequestsDS(name);

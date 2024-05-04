@@ -1,3 +1,0 @@
-product_type,Product_name,Product_description,quantity,supplied_quantity,amount,name_of_supplier,status
-consumable,Paper,A4 Size Paper,500,0,0.5,Pencil Co.,available
-consumable,Paper,A4 Size Paper,200,0,0.2,Eraser Co.,available
