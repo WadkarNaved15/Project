@@ -903,11 +903,11 @@ app.post("/reject",authorize(["StoreAdmin","HOD","Principal","Admin"]),async(req
 })
 
 
-app.get("/addLogin",async(req,res)=>{
+app.get("/addLogin",authorize(["Admin"]),async(req,res)=>{
     res.sendFile(__dirname + "/public/HTML/login_Form.html");
 
 })
-app.post("/addLogin",async(req,res)=>{
+app.post("/addLogin",authorize(["Admin"]),async(req,res)=>{
   const{email_id,password,role,name}= req.body
   const pass_hash = await bcrypt.hash(password.trim(),13)
   await backenFunctions.insertLogin(email_id,pass_hash,name,role)
